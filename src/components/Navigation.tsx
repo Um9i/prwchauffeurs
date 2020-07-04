@@ -2,23 +2,48 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import Home from "../pages/Home";
 
 class Navigation extends React.Component {
   render() {
     return (
-      <Navbar className="py-3 navbar-dark" bg="dark" expand="lg">
-        <Container>
-          <Navbar.Brand href="/prwchauffeurs/">PRW Chauffeurs</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto">
-              <Nav.Link href="/prwchauffeurs/">Home</Nav.Link>
-              <Nav.Link href="/prwchauffeurs/about/">About</Nav.Link>
-              <Nav.Link href="/prwchauffeurs/contact/">Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <Router>
+        <Navbar className="py-3 navbar-dark" bg="primary" expand="lg">
+          <Container>
+            <Navbar.Brand href="/prwchauffeurs/">PRW Chauffeurs</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto">
+                <Link className="nav-link" to="/prwchauffeurs/">
+                  Home
+                </Link>
+                <Link className="nav-link" to="/prwchauffeurs/about/">
+                  About
+                </Link>
+                <Link className="nav-link" to="/prwchauffeurs/contact/">
+                  Contact
+                </Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+        <Switch>
+          <Container className="my-5">
+            <Route path="/prwchauffeurs/about/">
+              <About />
+            </Route>
+            <Route path="/prwchauffeurs/contact/">
+              <Contact />
+            </Route>
+            <Route exact path="/prwchauffeurs/">
+              <Home />
+            </Route>
+          </Container>
+        </Switch>
+      </Router>
     );
   }
 }
