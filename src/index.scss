@@ -1,8 +1,9 @@
 // Override default variables before the import
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap");
-$body-bg: #050505;
+$body-bg: #020202;
 $body-color: #fefefe;
 $font-family-base: "Titillium Web", sans-serif;
-$primary: #111;
+$primary: #050505;
+$dark: #050505;
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";

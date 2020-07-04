@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
+import "./Navigation.scss";
 
 class Navigation extends React.Component {
   render() {
@@ -30,17 +31,15 @@ class Navigation extends React.Component {
           </Container>
         </Navbar>
         <Switch>
-          <Container className="my-5">
-            <Route path="/prwchauffeurs/about/">
-              <About />
-            </Route>
-            <Route path="/prwchauffeurs/contact/">
-              <Contact />
-            </Route>
-            <Route exact path="/prwchauffeurs/">
-              <Home />
-            </Route>
-          </Container>
+          <Route path="/prwchauffeurs/about/">
+            <About />
+          </Route>
+          <Route path="/prwchauffeurs/contact/">
+            <Contact />
+          </Route>
+          <Route exact path="/prwchauffeurs/">
+            <Home />
+          </Route>
         </Switch>
       </Router>
     );
