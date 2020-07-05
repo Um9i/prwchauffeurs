@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f90f47d446f4750c2b8e7cebff65e76c",
+    "revision": "1bbbff73a468fb3f4943f6dad1b0896c",
     "url": "/prwchauffeurs/index.html"
   },
   {
-    "revision": "403f8e9eef3ddab02bac",
-    "url": "/prwchauffeurs/static/css/main.6bc7c747.chunk.css"
+    "revision": "0b503c231d4cddf09425",
+    "url": "/prwchauffeurs/static/css/main.d34db172.chunk.css"
   },
   {
     "revision": "84733d0264cf72e7b5e1",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/prwchauffeurs/static/js/2.d87974e1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "403f8e9eef3ddab02bac",
-    "url": "/prwchauffeurs/static/js/main.e2aba2e4.chunk.js"
+    "revision": "0b503c231d4cddf09425",
+    "url": "/prwchauffeurs/static/js/main.29b35fdb.chunk.js"
   },
   {
     "revision": "a77543b36ab1ff6dff61",
