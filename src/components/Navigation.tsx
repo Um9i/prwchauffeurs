@@ -12,7 +12,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <Router>
-        <Navbar className="py-3 navbar-dark" bg="dark" expand="lg">
+        <Navbar className="py-3 mb-5 navbar-dark" bg="dark" expand="lg">
           <Container>
             <Link className="navbar-brand" to="/prwchauffeurs/">
               PRW Chauffeurs
