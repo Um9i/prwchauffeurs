@@ -44,7 +44,7 @@ class ContactUs extends React.Component {
           <Form.Control as="textarea" name="message" />
         </Form.Group>
         <Button
-          className="py-2 mt-4 disabled"
+          className="py-2 mt-4 mb-4"
           block
           variant="success"
           type="submit"

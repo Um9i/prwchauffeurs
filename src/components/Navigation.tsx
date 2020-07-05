@@ -12,7 +12,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <Router>
-        <Navbar className="py-3 navbar-dark" bg="primary" expand="lg">
+        <Navbar className="py-3 navbar-dark" bg="dark" expand="lg">
           <Container>
             <Link className="navbar-brand" to="/prwchauffeurs/">
               PRW Chauffeurs
@@ -20,10 +20,19 @@ class Navigation extends React.Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/prwchauffeurs/about/">
+                <Link className="nav-link text-center" to="/prwchauffeurs/">
+                  Home
+                </Link>
+                <Link
+                  className="nav-link text-center"
+                  to="/prwchauffeurs/about/"
+                >
                   About
                 </Link>
-                <Link className="nav-link" to="/prwchauffeurs/contact/">
+                <Link
+                  className="nav-link text-center"
+                  to="/prwchauffeurs/contact/"
+                >
                   Contact
                 </Link>
               </Nav>
