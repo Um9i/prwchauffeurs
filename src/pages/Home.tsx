@@ -4,20 +4,15 @@ import Heading from "../components/Heading";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import "./Home.scss";
 
 class Home extends React.Component {
   render() {
     return (
       <Container>
         <Heading />
-        <h1 className="text-center">Comfort with PRW Chauffeurs Ltd</h1>
-        <div className="mb-5 text-muted text-center">
-          We pride ourselves in offering you the best available experience in
-          one of our luxury chauffeur driven cars, by fully qualified, CRB
-          checked Drivers.
-        </div>
         <Row>
-          <Col md className="my-2">
+          <Col lg className="my-4">
             <Card className="bg-dark">
               <Card.Img variant="top" src="img/1074598.jpg" />
               <Card.Body>
@@ -36,7 +31,7 @@ class Home extends React.Component {
               </Card.Body>
             </Card>
           </Col>
-          <Col md className="my-2">
+          <Col lg className="my-4">
             <Card className="bg-dark">
               <Card.Img variant="top" src="img/654180.jpg" />
               <Card.Body>
@@ -55,7 +50,7 @@ class Home extends React.Component {
               </Card.Body>
             </Card>
           </Col>
-          <Col md className="my-2">
+          <Col lg className="my-4">
             <Card className="bg-dark">
               <Card.Img variant="top" src="img/654175.jpg" />
               <Card.Body>
