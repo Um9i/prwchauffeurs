@@ -18,7 +18,9 @@ class Contact extends React.Component {
             </Col>
           </Row>
         </Jumbotron>
-        <ContactDetail />
+        <div className="my-5 py-5">
+          <ContactDetail />
+        </div>
       </Container>
     );
   }

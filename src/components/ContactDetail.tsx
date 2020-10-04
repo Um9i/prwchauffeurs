@@ -3,11 +3,12 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
+import "./ContactDetail.scss";
 
 class ContactDetail extends React.Component {
   render() {
     return (
-      <Row>
+      <Row className="contact-detail">
         <Col lg={{ span: 4, offset: 2 }}>
           <Card className="bg-dark">
             <Card.Header>Address</Card.Header>
