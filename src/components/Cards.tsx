@@ -10,7 +10,7 @@ class Cards extends React.Component {
       <Row>
         <Col lg className="my-4">
           <Card className="bg-dark">
-            <Card.Img variant="top" src="img/1074598.jpg" />
+            <Card.Img variant="top" src="img/1074598.jpg" alt="card 1" />
             <Card.Body>
               <Card.Title>Quality. Luxury. Relaxing.</Card.Title>
               <Card.Text>
@@ -29,7 +29,7 @@ class Cards extends React.Component {
         </Col>
         <Col lg className="my-4">
           <Card className="bg-dark">
-            <Card.Img variant="top" src="img/654180.jpg" />
+            <Card.Img variant="top" src="img/654180.jpg" alt="card 2" />
             <Card.Body>
               <Card.Title>Always travel 'Business Class'...</Card.Title>
               <Card.Text>
@@ -48,7 +48,7 @@ class Cards extends React.Component {
         </Col>
         <Col lg className="my-4">
           <Card className="bg-dark">
-            <Card.Img variant="top" src="img/654175.jpg" />
+            <Card.Img variant="top" src="img/654175.jpg" alt="card 3" />
             <Card.Body>
               <Card.Title>Transport to and from sets...</Card.Title>
               <Card.Text>
