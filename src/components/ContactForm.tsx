@@ -2,18 +2,33 @@ import React from "react";
 import emailjs from "emailjs-com";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Alert from "react-bootstrap/Alert";
 
 const SERVICE_ID: any = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID: any = process.env.REACT_APP_TEMPLATE_ID;
 const USER_ID: any = process.env.REACT_APP_USER_ID;
 
-class ContactUs extends React.Component {
+interface Success {
+  success: boolean;
+}
+
+class ContactUs extends React.Component<{ success: boolean }, Success> {
+
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      success: this.props.success,
+    };
+    this.sendEmail = this.sendEmail.bind(this);
+  }
+
   sendEmail(e: any) {
     e.preventDefault();
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
       (result) => {
         console.log(result.text);
+        this.setState({success: true});
       },
       (error) => {
         console.log(error.text);
@@ -22,8 +37,14 @@ class ContactUs extends React.Component {
   }
 
   render() {
+    const success = this.state.success;
+    let message;
+    if (success) {
+      message = <Alert variant="success text-center">Message sent successfully!</Alert>;
+    }
     return (
       <Form onSubmit={this.sendEmail}>
+        {message}
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Name</Form.Label>
           <Form.Control type="text" name="user_name" placeholder="Enter name" />

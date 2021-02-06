@@ -14,7 +14,7 @@ class Contact extends React.Component {
           <Row>
             <Col lg={{ span: 4, offset: 4 }}>
               <h1 className="mb-5">Contact Us</h1>
-              <ContactForm />
+              <ContactForm success={false} />
             </Col>
           </Row>
         </Jumbotron>
